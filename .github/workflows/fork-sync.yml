@@ -1,19 +1,19 @@
-name: Sync Fork
+# name: Sync Fork
 
-on:
-  schedule:
-    - cron: '* * * * *'
-  workflow_dispatch: # on button click
+# on:
+#   schedule:
+#     - cron: '* * * * *'
+#   workflow_dispatch: # on button click
 
-jobs:
-  sync:
+# jobs:
+#   sync:
 
-    runs-on: ubuntu-latest
+#     runs-on: ubuntu-latest
 
-    steps:
-      - uses: tgymnich/fork-sync@v1.8
-        with:
-          owner: warren-davies4
-          token: ${{ github.token }}
-          base: master
-          head: master
+#     steps:
+#       - uses: tgymnich/fork-sync@v1.8
+#         with:
+#           owner: warren-davies4
+#           token: ${{ github.token }}
+#           base: master
+#           head: master
